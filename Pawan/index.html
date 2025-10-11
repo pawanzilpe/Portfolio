@@ -1,0 +1,1094 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pawan Zilpe | Portfolio</title>
+
+
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Google Fonts - Poppins & Inter -->
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700&display=swap">
+
+    <!-- Font Awesome for social media icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <!-- Devicon for technical skill icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
+
+    <!-- AOS CSS for animation on scroll -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+
+    <!-- Local stylesheet -->
+    <link rel="stylesheet" href="style.css">
+<link href="index.html">
+</head>
+
+<body>
+
+    <!-- ================= HEADER start ================= -->
+    <header class="sticky top-0 z-50">
+        <nav class="max-w-6xl mx-auto px-6 flex justify-between items-center py-4">
+            <!-- Logo -->
+            <a href="#" class="text-2xl font-bold" style="color: var(--primary-color);">
+                Pawan<span class="text-white">.Portfolio </span>
+            </a>
+
+            <!-- Desktop Nav -->
+            <ul class="hidden md:flex space-x-8 font-medium text-gray-300">
+                <li><a href="#home" class="nav-link-hover">Home</a></li>
+                <li><a href="#about" class="nav-link-hover">About</a></li>
+                <li><a href="#skills" class="nav-link-hover">Skills</a></li>
+                <li><a href="#projects" class="nav-link-hover">Projects</a></li>
+                <li><a href="#contact-form" class="nav-link-hover">Contact</a></li>
+            </ul>
+
+            <!-- CTA Button -->
+            <a href="resume.html" target="_blank" class="hidden md:inline-block btn-primary">
+                Resume
+            </a>
+
+            <!-- Mobile Menu Button -->
+            <button id="menu-btn" class="md:hidden text-2xl text-gray-200">&#9776;</button>
+        </nav>
+
+        <!-- Mobile Nav -->
+        <div id="mobile-menu" class="hidden md:hidden bg-gray-800 px-6 py-4">
+            <ul class="space-y-4 text-gray-300">
+                <li><a href="#home" class="nav-link-hover">Home</a></li>
+                <li><a href="#about" class="nav-link-hover">About</a></li>
+                <li><a href="#skills" class="nav-link-hover">Skills</a></li>
+                <li><a href="#projects" class="nav-link-hover">Projects</a></li>
+                <li><a href="#contact" class="nav-link-hover">Contact</a></li>
+            </ul>
+        </div>
+    </header>
+    <!-- ================= HEADER end ================= -->
+
+    <!-- ================= HERO SECTION start ================= -->
+    <section id="home" class="hero-section min-h-[90vh] flex items-center px-6 py-20">
+        <div class="max-w-6xl mx-auto flex flex-col-reverse md:flex-row items-center gap-12 w-full">
+            <!-- Hero Text Content -->
+            <div class="hero-text flex-1 text-center md:text-left">
+                <h1 class="text-4xl md:text-5xl font-extrabold leading-tight mb-4 opacity-0 fade-in-delay-1">
+                    Hi, I'm <span class="highlight-text-5">Pawan Zilpe</span>
+                </h1>
+                <h2 class="text-xl md:text-2xl font-bold text-gray-400 mb-4 opacity-0 fade-in-delay-2">
+                    Developer by Passion | BCCA Graduate
+                </h2>
+                <p class="text-lg text-gray-300 mb-8 max-w-md mx-auto md:mx-0 opacity-0 fade-in-delay-3">
+                    I love building meaningful WEB app that solves real-world problems. With a strong foundation
+                    in web technologies and web app design, I’m always exploring new ways to grow, improve,
+                    and bring ideas to life through code. For me, development isn’t just work — it’s my passion.
+                </p>
+                <!-- Buttons -->
+                <div
+                    class="hero-buttons-5 flex flex-col sm:flex-row justify-center md:justify-start gap-4 mb-8 opacity-0 fade-in-delay-3">
+                    <a href="#projects" class="btn btn-primary-5">View Projects</a>
+                    <a href="RESUME.pdf" target="_blank" class="btn btn-outline-5">Download Resume</a>
+                </div>
+                <!-- Social Icons -->
+                <div
+                    class="social-icons-5 flex justify-center md:justify-start gap-5 text-2xl opacity-0 fade-in-delay-3">
+                    <a href="https://in.linkedin.com/in/pawan-zilpe-383582318/" target="_blank">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                    <a href="https://github.com/pawanzilpe" target="_blank">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://www.facebook.com/share/17QB6qEHch/" target="_blank">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="https://www.instagram.com/pawan.zilpe_?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="pawanzilpe1099@gmail.com">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                </div>
+            </div>
+            <!-- Profile Image -->
+            <div class="hero-image-container flex-1 flex justify-center opacity-0 fade-in-delay-2">
+                <div class="profile-image-5-container">
+                    <!-- You will need to replace this placeholder URL with your actual passphoto.png image path -->
+                    <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBxAQEBAQEBAJEBAKDQoIDQkJCA8ICQcKIBEiIiAdHxMkKDQsGCYxHBMfLTstMSw1MEMwIys/RD84PzQ5OisBCgoKDg0OFRAQFisZFhkrKys3KzcrLS0rNysvLSs3LTEtLSs3LTgtNTcrLS8xLS03LSsrKysrLSsrKysrLSsrK//AABEIAMgAyAMBIgACEQEDEQH/xAAcAAABBQEBAQAAAAAAAAAAAAADAAIEBQYBBwj/xABBEAABAwIEAgcFBQYEBwAAAAABAAIDBBEFEiExBkETUWFxgZGhIrHR4fAHFELB8SMyQ1JiohUkcoIWM1Njc7Li/8QAGwEAAgMBAQEAAAAAAAAAAAAAAgMBBAUABgf/xAAqEQADAAICAgEDAwQDAAAAAAAAAQIDESExBBITBSJBMlFhFBUjgUJSof/aAAwDAQACEQMRAD8A1005O3co2VGDfiuiMlLhPJe2W7axRqRtgmsbqjdCV2OKy0MtQo0Z+Kbd7HAfVk4NT2xroZZUdS0XnVocIbojaYeei6wXRXGyZ8SaAnO00zD8SUwY8qlutbxlDs7rsVkFlVOm0fQPAyfJglhGIzUFiM0KGixR0hcRgxIxqBfsgKSIWIbguCTOXXU1OXEsSSS7ZcQcRGplkQBQQzpQJAjWQ5FKOnsjlJdISUNDj0IRfVkRoA/RPkQ23+gtF1ro+cqd9ikeB71FFUL2UtzLqE+m1ulVVDVKRLz6aIbCSdfeusbZEvZTMtg0w8brIhN1FY5GAK0MOOvyUMtp9FdxTFmhB6hZYC3wXpWJw5oHdl/cvN60hmZziGtZdznONg0LLzy1kaR7b6JnX9N9z6HRhEmnjibmkfGwdcjg2/hzWJxfiouvHAS1urTJcNlk16+Szkr3OPtF197vJefNOnxdrdPRV8z6/M05xT7fz+D0j/i2kvYGV3LM2KzfVXFJVRytDozcO1HI+S8YzObfY9xuCFZ4RxDLBsQeYuTlBQ34s/8AFlLB9bv2/wAi4PWXhR3NVDgfFIms2YMa57srZI/ZjGnNaJwVWocPTPReL5WPPPtDA2XLp7kwqC4uTqe0IYRGoWcztl264CuogToTJQnBNkK45dkchJdKS7Q49BlmA3TBUjr9VisR4gLnENPO26rhxA9rgD71a+RHzF+UvweltmHYmOcqPCsQEjQb7256q2jN0+PVjXkbXAVzk0XKdlSvZPiplcdirVN89B4RZHEiisJ/NSGNTJyc/cLcfsSQwOaWnnffYL52434hE88jIiRDG9zWCxaZ7H94jwX0PKzMxzQbZ2Pjzc23HzXyti9A+CeWB9+kglfA634nApX2+zpdlj5ck4/TekyJHE5xs0OcTyY3MVIdST3DTHPfSzTE4HyXtX2WcKthp2zyMHS1AEgLhcxx207l6IaZlv3W+Q0VZ5ueBs+MtLbPmek4Nr5W5xC8Df8AaHIT4KrxDC5qc2lYW689QSvqCsp9DYDmvMOPsKMkb8rbuAJGmpS1nr256HPxJ9W12ea4O1000cY0zOaNDs2+vuXrIN1hPs7w7NJLKf4IEQH9Z+Q9VvslkvyL3eje+iYvTB7PugTkwoj0MpJuo6E5NTgoOOroK4E8BcCzia9EypjwpOQAhJOISUjEzLRVFt1Mgp+k1/NRzQEnTvVtRsyNsULrS4PjyrjkdRVhhNrmw9Ff02OHQdwWZkALr9qs6Fjbjbl70UZGnobGWtpJmwoqhzxdS235qLRNs0W7FM5d6uwttI1t6jbHxv8AgpIJVeN1PiBI2VnPica0LwZFW9h2leQfa7w5kqoqqPQYi5tNLpoyoFrG/aB6L2GCncTt6Ko49wX7xTht3AtcDGGgZTUXGUnx96qr7HstPV/aVWO4lPRRxx07aMNjYyP7xWzFrSQ3YNGp2VfwhxhW1krWPFE6M3d00Ec8d23tpca6hbUUcc8bHSMaSWtd7QDjG63Wm09DTU13/soxcB0j3BgBv1nvSm+ByS3sw3HNbWPmMUUlSxkbc72UoEckum2flss9guHyOfctr2kBrnvqKsztk7COvVehV9ZB99DQ+ImRrWmO93HWyl4mWMYbBoNr6AC6U6etD1C2meb8K0Jh+9tIt/m5C08izl71cvTaaKzpX7dNITl7ha/olIUtv2rZ6Hwo9cUoC9MTnLik0EIJy41OKggSe0piQXIhhSUxy6SmuUohDHJJOSRoNFSKxjdNOrcIE9Tm2WXq5ndITc7230Vxhc191FxpbPkV4vUu6GAu1KsGRZCNdtVBiqMuyLE98p0BKBaDhTr+TZ4PUhwAvroFbmInZZzAKRzdXaFaOCrANj3aq3hzej2zTlVWPkZ0RG6tsNaCq+snbbQhScIflFz71pZcs3HtsVixub0i8DQomItGQ3AItexAIuk6vaOY81WYvjDGsIvuCsyrWuzRw4LqkkiFh9d7Ntvad7ObNlF+tQK3GHvfJCIJyIy1vTFrY4nut/Oe/koFDK6Rzsu4vIBtm1VtHiMAYRI9rbfvNkPRlpS1W+S7mxfFk9WYrEZpmTseIQJNGjo6hj3SO6yOatMSxNxY3pMokcPaY12ZoPeh12L4fEXFhaXEk3zF5Lu8rOyVpmkzgODAQbu0Ab9BDSbJVy2tGicLADsHiUF4UiTXUWIOoIOhCC5JPR4uEtEYhcIRXBDcERYTGLt1xJcEOBXU1qeAuRB0Ljk4BNcpBBuXU16SNIYjz6Zt3HvJT4KjIR4I8cN/G5Q5KEuOiY2n2fKc1pvRfU8wcAVpeHHNG9rrJ0NM5jRf9VfYEXZ+dlV93L4B8Zf5Ea2qqCB7I8k2la92pv6qZFCLAkJzpAPqyRVU3s9RHhptMaYj9FSmvdawuh9MLDZQ6zFooPamkjjGv77tT4c1Y+5ykhk44h0yyLHH9VS4xC4hUmLfabBHdtPG6Y6jpZSYImnu3PosFjHF1bVOs+UsYST0NOBBHa219z4lWcfg5La3wJ/ucYXtc6NlR450dXHFGWmwkF7+y+a2gv4EeK0VTXwVLbuhYb3BZIwF0br6js2XkVNOY3RvG8LmSjvB+S9DnqoumYY3tLqqNsr6cG5bpo7yWp5XgemOfT8GPH1N5fIqsnVf+FZieHwNcDHG1p15ZgPgq7Fq50ULrWBDXcrcvmteyidJr7NuZJ2VFX4MZs4OgdKyJot/Dzan0WVK9rSZqW/THVIq+FeJQ1v3apcQY3GOKocbtDb7OPLvWvbZwu0tcDs5jg9p8V5TjDA2pnaNmyvA7rp1DXSxG8b5GHQ+w8tafDmn5fFTp6C8H6xUY5VraPUy1DcxYqm4tqW/vGOQdT4ww+YVzQ8Y07jaZkkf9TD07fiFXrx7k2cX1fBXb0XJYkY1d4TBT1LOkhlikaDYljrOY7tG4Ux2Ds5Ob4EIPjv9h/8AcsP/AGMyGJ4ar2TB7c0H7iB+iBprsavLiuUypyIbwroUzT9arrsOBUbJXkyuzOPH1ZJX7sLCSYqGry8Z5jE0gbeim4c4ZtR6Kxq2xtNtESmommxHegeTaPlWTnkKWAj5K24cY0O1UFrQ3dNbWhjgQfVD67CwZvitUz0CNoOiFU0vPxVNhOKFzhfrC1zWBwHbYpanfB6nx/MVraPGuMuJJhM+njJjZEejLmEtlkdbr6tVj5Z3PN3Oc47XcS4+asOLXB1ZVEbfeqoDsAebe5VbNR3r1GHHMY5SX4MLNlrJkpt/kRYmAWN+9Fb9aJrwmyudin1oeH6LU8JxhzS/VzgQ1xJu9o5arIBabgee0j2cnAGyuKtmb5Uv43r8G5waqFzGSQ+7rNcCA9t9NeaFxbUmCncY9JH/ALNrxa8V+aLINMwLGltndI61mKBi1VHPHKGu6QtaXAxgua13+rZZi8FfMqXRYn6zb8f46X3df6PK3vc57i8uc5ziXOcblxv1o4FvLqQr+0T1ucfVdlk27rJN6VM0sf6UOLtVxw+rpkY1unSlCmGyfw/jL6SdsjSQ1xEcrPwyRX6l6dU4y5rQQb5gCDfQheOAagdWq9O4ej6aihcd2tdFfno4j8kDbT3vgCl9vHZdYVjT36H9Vbh9x81nqSEN1UlteA610jLKt7Lvi+TWKFLZYMiIde/ap7ZW2+arJKi4096r5q1w5qvOHbLl+b6o0D6gdnmuLJ1Ne7rSVqfD2jPyfVNUZHHHvL9L6aq34fqiWgO32XaqmD7nnumUMORyztrWjFqkyfichAuFDwuIyyAa7+Ss6qLM1BwEdHJqOY5dqD5NIGIVWtm5wfBQ0AnsPirvpQwa8lzD3XY3uHJCxKmc4XB25JsTvTPTTM441KPnfEjeWXtlmd45ioke5HiFLxB15Z3AWDppiByaMxUNp9rvC9K+Jkw55bDNCT2pzT8FxxUbCeiON1Z8O1PR1MZ5OJjPcq141Sa/KQ4btIcO+6sxXBWyxtOf3PUcSi6ZoZrluHOt+L6uh1sTYaOUtAFmE6C1yn0FQHxscPxNa7fsQeJn2oZz2NH9wRutIwsct2p/k8wA19UyU677adxsiMKtMap420tDkfSPfIKySb7vZ0rCXCweeZAKxbrk9dK+0q4nja+u6VQ7TyCGG9luSbUusB/tXbCQSJ1ySO5eh/Z1V5qaWI7wzOI7GkX94K86gPs6duu1ytZ9nlTllmZ/1Y2Sd5B/+kUytpMVkp+raNxI06qtliIdfxVjNLool7q1WKZWzMWW6rSHMnNrKHWSn8k6V9jbwUygoQ8gnXYqvGJOtrouPM/XT7C4dgxkbd19dUlraKENaAOSS0ZUpFX032eTYXVFwuVN6UZhbfRUENUGM8E3D8SzP1XlsmL8oTO+zbQP0F1JhjaCHdxVRFPoCuurrKm0y741yuz07BakOYAPw6KbiFQGRSPOzI5H+AHyWR4NrQ4EE9Y3V5xFO1tLOSdBBOT3ZSrvjctI3fdVi9j53PjqS7tJQJDZ48t1JdoPIKFVmxB6rFeizcJGJj5bJzV1DhdceqKUP4DXYGTVBKkub8EDs+iux1+CbnfJtOE6hz4A1uronFhaTsPoqVxzNlpGs2M0rGm5F8oF/gqLges6OZ7DtK2412cCj8e1WZ0MY/AJJSO+wHuT8l/4tmNOHXl6/wBmScdO/Qd6c1v11pu7gP5dfFGKyuz0a6GkKLUalo63AKS8/BRXn22965dkPommO2nUp/DkxZVR2/iB8Z7Rl+SiSLlM8slidzbJG7fldHvVAWtw0ejySOsmQgk81ZGjNr/RRYKYAXT7yozI8em9ooK8luq5hmNOYdr8k7Hd7DuVbHHlHyXfKvwMnC022ascVWGxSWSkfp5pJjdHTSMpZ50N+pSaaPLr4qykguTYeiiywPvsfJY75GVj5aRcUE5cLeG6mOiO6h8N0xc+xB8lqKrDrNvbwIReP9OrO+9GX5OasL0kVmFVjo3jKdyrrG6176eUEn2oZQddxlVbBB7QsOYOytcdpv8ALzOH4YJnf2FaWH6VGC93RGHzM9zqejyl2pPUPeoFerBwsLdepUHEBomeR0a+FD6R/shS2uVbRO0VhH9aoYraD1yPCDO3a3LVSLIbgl09MbrgbST5JY3A2OYNJ6gVJ4gqM873XuGBsQ100CgVUJI03uPeuTm5Avtq431c5TVv49MTOJfKr/gbCOZ3OqIk1qRVZFsY/wCaiD/mDyUpx/NRGfv9y6P1A10W5Cjz/Ao90OVqZRy6PXRWAxsI/Exru/RBFWLKuwt+elgP/ajB7wLfkhyAp/xw1tmW8uRVpINK1rybqrr7DQKXHE/kECfD3uNylr0VcMe/kqNNEKOK4XFcMpcrdvRJP3voD4tcMcaZgOgHkmzU7er0V6zDR9BHGGt6vRZHpRtpx+xT8PwgSjTs2W3+4se3UbqnpaBrTcD0V1C4gW7huinLeNaTBrxsWR7aA/4RG0XAHXsqXiZ2WkqBpboZG+Yt+a02Yn3bqm4qpmmiqiTa1PM6/wDVl09QijNkq1thXgxTD9UeIE6k/QVZWS3NhsOxT6g2Fhu7RRZmBjLnc8+ZKuZqbejPhcDqOhk6Lprfsw7KXXtqntm10UietJp4adujQ3p323e++yBHEB+iJLXQCbfYdsqddALV0X2UPkYmdqH2aSPDvUaEfG/MqRUMJaf9p9U2MDKBb2tcxvodUvI+Ugp7ETb9UNzk+T5poaljAUrrD1QKQ3JPcU6rKBTPs7sOhUyBRbsk60pBzHvQ2hPCNpkKtGu4axAClawnWN0rd+Wa/wCakmu1WYwokRvtc2kdsLi9gpcJeXDR1r9SpV7+z5LkTj9U9cnoGF2LQbI8rQoeEuswdyO96CqaY+cctDXgJIMj/rrSUrNSJ/p4fZetCIPrVNKA95V6vFp9MzZ8uJ7ROjKksKqIpzzUttSEivFyItT5uJlgHqk49qC3Dp7fjEMXgXj4qe2oCz/2iT3w+QD8UkA/vHwUY8WRWtoK82OsdaZ5G8XdfkNFCxB9yGj8PjqpznWBPV5qvaNzzdc9auZeDOl7RNqaLojEL36Wniqf9JN9PRPZqoj610hbm/hRspxb+Ufqjxyj9d0yNC3wGyIkbQmsScUb1K2cts5K7ceKACiD36IL9D6Kpf7lif2Hk3C4kChyO3QBEOpdc+iHENU5w9edrLtMPaRrsUyZHyRZHgdp9y7E3qXHtR29SdK2zbfZzRNlhnLwDaVhGm3s/JaqWgiaDoPILP8A2Xm8VR/5Yv8A1WrqqfNoq1J64LmP1/JVRPAuAuySov8Ah5CDLSO+gqtRTZbm4XQJ70lx0DupJR6ML5J/c1BQ3RXSSW6m0eccoGYCmmIriSbNMTUJAySFQ8bPJo3DqfCfDN80kk1peuxMt+yWzzaoHs267IGSw9ewLqSzcv6jVnojUh1PeVP+tl1JMx/pF12PadPVcKSSG2HCHsYbA8swjvfZ3cli8OSVwG3su05CySS7JK9AJt/JoitKHKUklVLRCld+adSbpJI57FfgtIyuSJJJmTomT0D7L2fsJz/NM0f2/NbJwXUlX2Wkl6jChkJJLiUgTgOr0SSSUM4//9k="
+                        alt="pawanzilpe">
+                </div>
+            </div>
+        </div>
+        <!-- Scroll down icon -->
+        <a href="#about" class="scroll-down-5">
+            <i class="fas fa-chevron-down"></i>
+        </a>
+    </section>
+    <!-- ================= HERO SECTION end ================= -->
+
+
+    <!-- ================== About Section start =======================-->
+    <section id="about" class="about py-20 px-6">
+        <div class="max-w-6xl mx-auto">
+            <div class="text-center mb-12" data-aos="fade-up">
+                <h2 class="text-4xl font-bold highlight underline">About Me</h2>
+            </div>
+            <div class="flex flex-col md:flex-row items-center gap-12">
+                <!-- About Text Content -->
+                <div class="flex-1" data-aos="fade-right">
+                    <p>I am a MERN-stack developer, FOR WEBGURUKUL  an architect of digital experiences. 💻 My passion lies in building
+                        robust, end-to-end solutions, from the intricate logic of the backend to the intuitive design
+                        of the user interface. I thrive on the challenge of connecting every piece of the puzzle,
+                        ensuring seamless functionality and a cohesive user journey.
+                    </p><br>
+                    <p>As a WEB APP developer, I am a problem-solver at heart. I approach every project with a
+                        structured mindset, breaking down complex requirements into manageable components. My journey is
+                        one of continuous learning, as I stay on the cutting edge of modern technologies to deliver
+                        efficient, scalable, and secure applications. </p>
+                    <p>My experience includes crafting dynamic web applications and optimizing data-driven dashboards.
+                        I've honed my skills in various languages and frameworks, always seeking the right tools for
+                        the job. Each line of code I write is a step towards building a better, more connected world.
+                    </p><br>
+                    <p>My work is a testament to my dedication and love for creating. I'm excited to continue this
+                        journey, transforming innovative ideas into functional, beautiful, and impactful WEB APP.
+                    </p>
+                </div>
+                <!-- About Info Content -->
+                <div class="flex-1" data-aos="fade-left">
+                    <h3 class="text-xl font-bold mb-4 highlight">Personal Info</h3>
+                    <div class="info-grid">
+                        <div class="info-item">
+                            <p class="info-label">Name:</p>
+                            <p>Pawan Dnyneshwar Zilpe</p>
+                        </div>
+                        <div class="info-item">
+                            <p class="info-label">Email:</p>
+                            <p>pawanzilpe00@gmail.com</p>
+                        </div>
+                        <div class="info-item">
+                            <p class="info-label">Location:</p>
+                            <p>Wardha, Maharashtra India</p>
+                        </div>
+                        <div class="info-item">
+                            <p class="info-label">Degree:</p>
+                            <p>Master of Computer Applications</p>
+                        </div>
+                    </div>
+                    <div class="interests">
+                        <h4 class="text-lg font-bold mb-4 highlight">My Interests</h4>
+                        <div class="interest-tags">
+                            <span>Frontend Development</span>
+                            <span>Backend Development</span>
+                            <span>Databases</span>
+                            <span>APIs</span>
+                            <span>Cloud Computing</span>
+                            <span>DevOps</span>
+                            <span>MERN-stack Developer</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ================= ABOUT ME SECTION end ================= -->
+
+    <!-- ================= EDUCATION SECTION start ================= -->
+    <section id="education" class="education py-20 px-6 bg-gray-900">
+        <div class="max-w-6xl mx-auto">
+            <div class="text-center mb-12" data-aos="fade-up">
+                <h2 class="text-4xl font-bold highlight underline">Education</h2>
+            </div>
+            <div class="timeline">
+                <!-- Timeline item: Master's Degree (Left) -->
+                <!-- The `timeline-item-left` class positions this item on the left side of the line. -->
+                <div class="timeline-item timeline-item-left" data-aos="fade-right">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content text-left">
+                        <h1 class="highlight font-bold text-2xl">Bcom Computer Applications (BCCA)</h1>
+                        <span class="timeline-date"> 2022 - 2025 </span>
+                        <span class="timeline-date"> CGPA: 7.9 </span>
+                        <p class="timeline-institution text-gray-400">Nagpur University </p><br>
+                        <p class="timeline-institution text-gray-400">
+                            Completed BCCA with a strong focus on advanced computer applications. Built a solid
+                            foundation in software development, system design, and database management. Gained hands-on
+                            experience with Java, Python, Spring Boot, and modern web technologies. Explored key areas
+                            like machine learning, cybersecurity, and cloud computing. Successfully completed academic
+                            projects and a major internship in software development. Actively participated in technical
+                            events, coding competitions, and seminars. Prepared to contribute as a MERN-stack or backend
+                            developer with industry-ready skills.
+                        </p>
+                    </div>
+                </div>
+                <!-- Timeline item: Bachelor's Degree (Right) -->
+                <!-- The `timeline-item-right` class positions this item on the right side. -->
+                <div class="timeline-item timeline-item-right" data-aos="fade-left" data-aos-delay="100">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content text-left">
+                        <h1 class="highlight font-bold text-2xl"> MERN Stack (WebGurukul)</h1>
+                        <span class="timeline-date">2025 - 2026</span>
+                        <span class="timeline-date">Percentage: 79.00%</span>
+                        <p class="timeline-institution text-gray-400"> Nagpur .
+                        </p><br>
+                        <p class="timeline-institution text-gray-400">
+                            Developed a strong interest in Backend Development and Software Engineering, with hands-on training in the MERN Stack (MongoDB, Express.js, React.js, Node.js) from WebGurukul IIT Training Classes, Wardha.
+
+Successfully completed an Internship at Ambe AI Technology, Nagpur (Subhash Nagar), where practical exposure to web development and project implementation was gained.
+                        </p>
+                    </div>
+                </div>
+                <!-- Timeline item: High School (Left) -->
+                <div class="timeline-item timeline-item-left" data-aos="fade-right" data-aos-delay="200">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content text-left">
+                        <h1 class="highlight font-bold text-2xl">Higher Secondary Certificate (HSC) & Secondary School
+                            Certificate (SSC)</h1>
+                        <span class="timeline-date"> 2019 </span>
+                        <p class="timeline-institution text-gray-400">Wardha Maharashtra India</p><br>
+                        <p class="timeline-institution text-gray-400">
+                           🎓 Senior Secondary Education Summary (Arts Stream)
+
+Completed higher secondary education in the Arts stream, specializing in Geography along with related social science and humanities subjects. Built a strong understanding of geographical concepts, human and environmental studies, and analytical observation skills.
+
+Actively participated in academic discussions, cultural activities, and group projects, which enhanced communication, creativity, and teamwork abilities. Developed an early interest in technology and digital learning, which later inspired the transition toward computer applications and software development.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ================= EDUCATION SECTION end ================= -->
+
+
+
+    <!-- ================= EXPERIENCE SECTION start ================= -->
+    <section id="experience" class="experience py-20 px-6">
+        <div class="max-w-6xl mx-auto">
+            <div class="text-center mb-12">
+                <h2 class="text-4xl font-bold highlight underline">Experience</h2>
+            </div>
+            <div class="timeline">
+                <!-- Timeline item: Web Development Intern (Left) -->
+                <div class="timeline-item timeline-item-left">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content text-left">
+                        <h1 class="highlight font-bold text-2xl">Ambe AI Technology</h1>
+                        <span class="timeline-date">Jul 2025 - Dec 2026</span>
+                        <p class="timeline-institution text-gray-400">MERN Stack </p>
+                        <br>
+                        <p class="timeline-institution text-gray-400">
+                            💼 Professional Experience
+
+Worked as a Web Developer Intern at Ambe AI Technology, Nagpur (Subhash Nagar) for 6 months, where I contributed to the development of web-based software solutions and CRM systems.
+Gained hands-on experience in frontend and backend development, including designing user-friendly interfaces, managing databases, and implementing efficient workflows for client management.
+
+Actively participated in the CRM project lifecycle, from planning and design to development and testing. Collaborated with the technical team to enhance performance, improve UI/UX, and integrate features based on client requirements.
+This experience strengthened my understanding of full-stack development, problem-solving, and team collaboration in a real-world environment.
+                        </p><br>
+                        <div class="skill-tags flex flex-wrap gap-2">
+                            <span>React.js</span>
+                            <span>Node.js</span>
+                            <span>MongoDB</span>
+                            <span>Git</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- Timeline item: Customer Care Executive (Right) -->
+                <div class="timeline-item timeline-item-right">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content text-left">
+                        <h1 class="highlight font-bold text-2xl">Customer Care Executive</h1>
+                        <span class="timeline-date">May 2024 - Feb 2025</span>
+                        <p class="timeline-institution text-gray-400">Indux Technology</p><br>
+                        <p class="timeline-institution text-gray-400">
+                            Graphic Designer | Indux Technology
+Utilized creative and technical skills to design visually engaging graphics for digital and print media. Collaborated with marketing and development teams to produce brand-consistent materials that improved audience engagement. Managed multiple design projects simultaneously, meeting tight deadlines with precision and creativity. Enhanced visual storytelling through innovative use of typography, color, and layout design tools including Adobe Photoshop, Illustrator, and Canva.
+                        </p><br>
+                        <div class="skill-tags flex flex-wrap gap-2">
+                            <span>Team Leadership</span>
+                            <span>Project Management</span>
+                            <span>Teamwork</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ================= EXPERIENCE SECTION end ================= -->
+
+
+    <!-- ================= SKILLS SECTION START ================= -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <!-- Section Header -->
+            <div class="section-header" data-aos="fade-up">
+                <h2>Skills</h2>
+            </div>
+
+            <!-- Skills Tab System -->
+            <div class="skills-tabs">
+                <!-- Tab Navigation Buttons -->
+                <div class="tabs-nav">
+                    <!-- Button for Technical Skills, active by default -->
+                    <button class="tab-btn active" data-tab="technical">Technical Skills</button>
+                    <!-- Button for Frameworks & Tools -->
+                    <button class="tab-btn" data-tab="frameworks">Frameworks & Tools</button>
+                    <!-- Button for Soft Skills -->
+                    <button class="tab-btn" data-tab="soft">Soft Skills</button>
+                </div>
+
+                <!-- Tab Content Panes -->
+                <div class="tabs-content">
+                    <!-- Technical Skills Pane -->
+                    <div class="tab-pane active" id="technical">
+                        <div class="skills-grid">
+                            <!-- Each skill item has a progress bar -->
+                            <div class="skill-item" data-aos="fade-up">
+                                <div class="skill-header">
+                                    <span>JavaScript</span>
+                                    <span class="skill-percentage">85%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 85%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item" data-aos="fade-up" data-aos-delay="50">
+                                <div class="skill-header">
+                                    <span>HTML & CSS</span>
+                                    <span class="skill-percentage">90%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 90%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item" data-aos="fade-up" data-aos-delay="100">
+                                <div class="skill-header">
+                                    <span>Python</span>
+                                    <span class="skill-percentage">75%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 75%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item" data-aos="fade-up" data-aos-delay="150">
+                                <div class="skill-header">
+                                    <span>Java</span>
+                                    <span class="skill-percentage">70%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 70%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item" data-aos="fade-up" data-aos-delay="200">
+                                <div class="skill-header">
+                                    <span>MongoDB</span>
+                                    <span class="skill-percentage">80%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 80%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item" data-aos="fade-up" data-aos-delay="250">
+                                <div class="skill-header">
+                                    <span>Php</span>
+                                    <span class="skill-percentage">65%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 65%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item" data-aos="fade-up" data-aos-delay="300">
+                                <div class="skill-header">
+                                    <span>Data Structures</span>
+                                    <span class="skill-percentage">75%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 75%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item" data-aos="fade-up" data-aos-delay="350">
+                                <div class="skill-header">
+                                    <span>Algorithms</span>
+                                    <span class="skill-percentage">70%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 70%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Frameworks & Tools Pane -->
+                    <div class="tab-pane" id="frameworks">
+                        <div class="frameworks-grid">
+                            <!-- Frontend -->
+                            <div class="framework-item" data-aos="fade-up">
+                                <i class="devicon-react-original colored"></i>
+                                <span>React.js</span>
+                            </div>
+                            <div class="framework-item" data-aos="fade-up" data-aos-delay="50">
+                                <i class="devicon-tailwindcss-plain colored"></i>
+                                <span>Tailwind CSS</span>
+                            </div>
+
+                            <!-- Backend -->
+                            <div class="framework-item" data-aos="fade-up" data-aos-delay="100">
+                                <i class="devicon-nodejs-plain-wordmark"></i>
+                                <span>Node.js</span>
+                            </div>
+                            <div class="framework-item" data-aos="fade-up" data-aos-delay="150">
+                                <i class="devicon-express-original colored"></i>
+                                <span>Express.js</span>
+                            </div>
+                            <div class="framework-item" data-aos="fade-up" data-aos-delay="200">
+                                <i class="devicon-spring-plain colored"></i>
+                                <span>Spring Boot</span>
+                            </div>
+
+                            <!-- Databases -->
+                            <div class="framework-item" data-aos="fade-up" data-aos-delay="250">
+                                <i class="devicon-mongodb-plain colored"></i>
+                                <span>MongoDB</span>
+                            </div>
+                            <div class="framework-item" data-aos="fade-up" data-aos-delay="300">
+                                <i class="devicon-mysql-plain colored"></i>
+                                <span>MySQL</span>
+                            </div>
+                            <div class="framework-item" data-aos="fade-up" data-aos-delay="350">
+                                <i class="devicon-postgresql-plain colored"></i>
+                                <span>PostgreSQL</span>
+                            </div>
+
+                            <!-- DevOps & Tools -->
+                            <div class="framework-item" data-aos="fade-up" data-aos-delay="400">
+                                <i class="devicon-git-plain colored"></i>
+                                <span>Git</span>
+                            </div>
+                            <div class="framework-item" data-aos="fade-up" data-aos-delay="450">
+                                <i class="devicon-github-original" style="color: var(--primary-color)"></i>
+                                <span>GitHub</span>
+                            </div>
+                            <div class="framework-item" data-aos="fade-up" data-aos-delay="500">
+                                <i class="devicon-docker-plain colored"></i>
+                                <span>Docker</span>
+                            </div>
+                            <div class="framework-item" data-aos="fade-up" data-aos-delay="550">
+                                <i class="devicon-wordpress-plain" style="color: #487BB1"></i>
+                                <span>WordPress</span>
+                            </div>
+
+                            <!-- Cloud -->
+                            <div class="framework-item" data-aos="fade-up" data-aos-delay="600">
+                                <i class="devicon-amazonwebservices-plain-wordmark"
+                                    style="color: var(--primary-color)"></i>
+                                <span>AWS</span>
+                            </div>
+                            <div class="framework-item" data-aos="fade-up" data-aos-delay="650">
+                                <i class="devicon-firebase-plain colored"></i>
+                                <span>Firebase</span>
+                            </div>
+
+                            <!-- IDEs -->
+                            <div class="framework-item" data-aos="fade-up" data-aos-delay="700">
+                                <i class="devicon-vscode-plain colored"></i>
+                                <span>VS Code</span>
+                            </div>
+
+                            <!-- Design Tools -->
+                            <div class="framework-item" data-aos="fade-up" data-aos-delay="750">
+                                <i class="devicon-figma-plain colored"></i>
+                                <span>Figma</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Soft Skills Pane -->
+                    <div class="tab-pane" id="soft">
+                        <div class="soft-skills-grid">
+                            <!-- Each soft skill item has a heading and description -->
+                            <div class="soft-skill-item" data-aos="fade-up">
+                                <h4>Team Collaboration</h4>
+                                <p>Experienced in working with diverse teams on complex projects</p>
+                            </div>
+                            <div class="soft-skill-item" data-aos="fade-up" data-aos-delay="50">
+                                <h4>Problem Solving</h4>
+                                <p>Strong analytical skills and creative approach to challenges</p>
+                            </div>
+                            <div class="soft-skill-item" data-aos="fade-up" data-aos-delay="100">
+                                <h4>Communication</h4>
+                                <p>Clear and effective verbal and written communication</p>
+                            </div>
+                            <div class="soft-skill-item" data-aos="fade-up" data-aos-delay="150">
+                                <h4>Time Management</h4>
+                                <p>Efficient at prioritizing tasks and meeting deadlines</p>
+                            </div>
+                            <div class="soft-skill-item" data-aos="fade-up" data-aos-delay="200">
+                                <h4>Adaptability</h4>
+                                <p>Quick to learn new technologies and methodologies</p>
+                            </div>
+                            <div class="soft-skill-item" data-aos="fade-up" data-aos-delay="250">
+                                <h4>Leadership</h4>
+                                <p>Experience leading small teams and coordinating projects</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ================= SKILLS SECTION END ================= -->
+
+
+
+    <!-- ================= PROJECTS SECTION ================= -->
+
+    <section id="projects" class="projects">
+        <div class="container ">
+            <div class="section-header" data-aos="fade-up">
+                <h2>My Projects</h2>
+            </div>
+            <div class="projects-grid">
+                <div class="project-card" data-aos="fade-up">
+                    <div class="project-image">
+                        <img src="p1.png" alt="E-Learning Platform">
+                        <div class="project-links">
+                            <a href="https://github.com/Tejesh-Bhagat/Restaurant-website" target="_blank"><i
+                                    class="fab fa-github"></i></a>
+                            <a href="https://tejesh-bhagat.github.io/Restaurant-website/" target="_blank"><i
+                                    class="fas fa-external-link-alt"></i></a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Restaurant Website with Chatbot</h3>
+                        <p>This website enhances the dining experience with an interactive menu, online ordering, and a
+                            reservation system, allowing customers to explore the menu, place orders, and book tables
+                            easily.</p>
+                        <div class="project-tags flex flex-wrap gap-2">
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>JavaScript</span>
+                            <span>Node.js</span>
+                            <span>React</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="project-image">
+                        <img src="p2.png" alt="Inventory Management System">
+                        <div class="project-links">
+                            <a href="https://github.com/Tejesh-Bhagat/Restaurant-website" target="_blank"><i
+                                    class="fab fa-github"></i></a>
+                            <a href="https://github.com/Tejesh-Bhagat/Restaurant-website" target="_blank"><i
+                                    class="fas fa-external-link-alt"></i></a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Inventory Management System</h3>
+                        <p>A desktop application for small businesses to manage inventory, track sales, and generate
+                            reports.</p>
+                        <div class="project-tags flex flex-wrap gap-2">
+                            <span>Java</span>
+                            <span>MySQL</span>
+                            <span>JavaFX</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="project-image">
+                        <img src="p3.png" alt="Weather Forecast App">
+                        <div class="project-links">
+                            <a href="https://github.com/Tejesh-Bhagat/Restaurant-website" target="_blank"><i
+                                    class="fab fa-github"></i></a>
+                            <a href="https://github.com/Tejesh-Bhagat/Restaurant-website" target="_blank"><i
+                                    class="fas fa-external-link-alt"></i></a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Weather Forecast App</h3>
+                        <p>A mobile-responsive web application that provides real-time weather information using a
+                            third-party API.</p>
+                        <div class="project-tags flex flex-wrap gap-2">
+                            <span>JavaScript</span>
+                            <span>HTML/CSS</span>
+                            <span>API Integration</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card" data-aos="fade-up">
+                    <div class="project-image">
+                        <img src="p4.png" alt="Task Management Tool">
+                        <div class="project-links">
+                            <a href="https://github.com/Tejesh-Bhagat/Restaurant-website" target="_blank"><i
+                                    class="fab fa-github"></i></a>
+                            <a href="https://github.com/Tejesh-Bhagat/Restaurant-website" target="_blank"><i
+                                    class="fas fa-external-link-alt"></i></a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Task Management Tool</h3>
+                        <p>A collaborative task management application with real-time updates and team collaboration
+                            features.</p>
+                        <div class="project-tags flex flex-wrap gap-2">
+                            <span>React</span>
+                            <span>Firebase</span>
+                            <span>Material UI</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="project-image">
+                        <img src="p5.png" alt="Personal Finance Tracker">
+                        <div class="project-links">
+                            <a href="https://github.com/Tejesh-Bhagat/Restaurant-website" target="_blank"><i
+                                    class="fab fa-github"></i></a>
+                            <a href="https://github.com/Tejesh-Bhagat/Restaurant-website" target="_blank"><i
+                                    class="fas fa-external-link-alt"></i></a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Personal Finance Tracker</h3>
+                        <p>An application to track personal expenses, income, and provide insights on spending habits.
+                        </p>
+                        <div class="project-tags flex flex-wrap gap-2">
+                            <span>Python</span>
+                            <span>Django</span>
+                            <span>Chart.js</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="project-image">
+                        <img src="p6.png" alt="Portfolio Website">
+                        <div class="project-links">
+                            <a href="https://github.com/Tejesh-Bhagat/Restaurant-website" target="_blank"><i
+                                    class="fab fa-github"></i></a>
+                            <a href="https://github.com/Tejesh-Bhagat/Restaurant-website" target="_blank"><i
+                                    class="fas fa-external-link-alt"></i></a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Portfolio Website</h3>
+                        <p>A responsive portfolio website (this one!) to showcase my skills, projects, and experience.
+                        </p>
+                        <div class="project-tags flex flex-wrap gap-2">
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>JavaScript</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ================= PROJECTS SECTION  End ================= -->
+    <!-- ================= RESUME SECTION START================= -->
+    <section id="resume" class="py-20 md:py-32 bg-[var(--dark-color)]">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <!-- Section Header -->
+            <div class="max-w-4xl mx-auto text-center mb-12" data-aos="fade-up">
+                <h2 
+                    class="text-3xl sm:text-4xl lg:text-5xl font-extrabold header-text-gradient border-b-4 resume-heading-underline inline-block pb-2">
+                    Resume</h2>
+            </div>
+
+            <!-- Resume Download Box -->
+            <div class="max-w-4xl mx-auto mt-8 p-8 rounded-xl card-bg" data-aos="fade-up">
+                <div class="text-center">
+                    <!-- Download Resume Title -->
+                    <h3 class="text-2xl font-bold mb-2">Download My Resume</h3>
+
+                    <!-- Description Paragraph -->
+                    <p class="text-[var(--gray-color)] mb-6">
+                        Get a comprehensive overview of my skills, experience, and education in a downloadable format.
+                    </p>
+
+                    <!-- Download Button -->
+                    <a href="RESUME.pdf" download="pawan-Resume.pdf"
+                        class="inline-block btn-primary text-white font-semibold py-3 px-6 rounded-full shadow-md">
+                        <i class="fas fa-download mr-2"></i> Download Resume
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ================= RESUME SECTION END ================= -->
+
+    <!-- ================= CONTACT SECTION START ================= -->
+    <div id="contact-section" class="contact-card w-full max-w-6xl mx-auto rounded-3xl overflow-hidden p-8 sm:p-12">
+        <div class="text-center mb-12">
+            <h1 class="text-4xl sm:text-5xl font-bold text-[var(--primary-color)]">Get in Touch</h1>
+            <!-- Primary colored underline for the heading -->
+            <div class="h-1 w-20 bg-[var(--primary-color)] mx-auto mt-4 rounded-full"></div>
+        </div>
+
+        <!-- Flex Container for Two-Column Layout -->
+        <div class="flex flex-col lg:flex-row gap-12">
+
+            <!-- Left Column: Contact Details and Social Links -->
+            <div class="lg:w-1/2 flex flex-col justify-center space-y-8">
+
+                <!-- Individual Contact Item (Email) -->
+                <div class="flex items-center space-x-4">
+                    <div
+                        class="w-12 h-12 flex items-center justify-center bg-[var(--primary-color)] text-[var(--light-color)] rounded-full">
+                        <i class="fas fa-envelope text-xl"></i>
+                    </div>
+                    <div class="flex-grow">
+                        <h3 class="text-lg font-semibold text-[var(--light-color)]">Email Address</h3>
+                        <p id="email-text" class="text-[var(--gray-color)]">tejbhagat2001@gmail.com</p>
+                    </div>
+                </div>
+
+                <!-- Individual Contact Item (Phone) -->
+                <div class="flex items-center space-x-4">
+                    <div
+                        class="w-12 h-12 flex items-center justify-center bg-[var(--primary-light)] text-[var(--light-color)] rounded-full">
+                        <i class="fas fa-phone text-xl"></i>
+                    </div>
+                    <div>
+                        <h3 class="text-lg font-semibold text-[var(--light-color)]">Phone Number</h3>
+                        <p class="text-[var(--gray-color)]">+91 8459718594</p>
+                    </div>
+                </div>
+
+                <!-- Individual Contact Item (Location) -->
+                <div class="flex items-center space-x-4">
+                    <div
+                        class="w-12 h-12 flex items-center justify-center bg-[var(--primary-dark)] text-[var(--light-color)] rounded-full">
+                        <i class="fas fa-map-marker-alt text-xl"></i>
+                    </div>
+                    <div>
+                        <h3 class="text-lg font-semibold text-[var(--light-color)]">Location</h3>
+                        <p class="text-[var(--gray-color)]">Nagpur, Maharashtra, India</p>
+                    </div>
+                </div>
+
+                <!-- Social Links Section -->
+                <div class="mt-8">
+                    <h3 class="text-lg font-semibold text-[var(--primary-color)] mb-4">
+                        Connect with me
+                        <!-- Underline for this section -->
+                        <div class="h-0.5 w-12 bg-[var(--primary-color)] mt-2 rounded-full"></div>
+                    </h3>
+                    <div class="flex space-x-6">
+                        <!-- Social Link: LinkedIn -->
+                        <a href="https://www.linkedin.com/in/tejesh-bhagat-a4845223a/" target="_blank"
+                            class="text-[var(--gray-color)] hover:text-[var(--primary-color)] transition-colors duration-200 transform hover:scale-110">
+                            <i class="fab fa-linkedin text-3xl"></i>
+                        </a>
+                        <!-- Social Link: GitHub -->
+                        <a href="https://github.com/Tejesh-Bhagat" target="_blank"
+                            class="text-[var(--gray-color)] hover:text-[var(--dark-color)] transition-colors duration-200 transform hover:scale-110">
+                            <i class="fab fa-github text-3xl"></i>
+                        </a>
+                        <!-- Social Link: Twitter -->
+                        <a href="https://twitter.com/yourprofile" target="_blank"
+                            class="text-[var(--gray-color)] hover:text-[var(--primary-light)] transition-colors duration-200 transform hover:scale-110">
+                            <i class="fab fa-twitter text-3xl"></i>
+                        </a>
+                        <!-- Social Link: Instagram -->
+                        <a href="https://www.instagram.com/" target="_blank"
+                            class="text-[var(--gray-color)] hover:text-[var(--primary-color)] transition-colors duration-200 transform hover:scale-110">
+                            <i class="fab fa-instagram text-3xl"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Right Column: Contact Form -->
+            <div class="lg:w-1/2">
+                <form id="contact-form" class="space-y-6" onsubmit="handleFormSubmit(event)">
+
+                    <!-- Full Name Input -->
+                    <div>
+                        <label for="name" class="block text-[var(--light-color)] font-medium mb-1">Full Name</label>
+                        <input type="text" id="name" name="name" required
+                            class="w-full px-4 py-3 rounded-lg border border-[var(--gray-color)] bg-transparent text-[var(--light-color)] focus:outline-none focus:ring-2 focus:ring-[var(--primary-color)] transition-all duration-200">
+                    </div>
+
+                    <!-- Email Address Input -->
+                    <div>
+                        <label for="email" class="block text-[var(--light-color)] font-medium mb-1">Email
+                            Address</label>
+                        <input type="email" id="email" name="email" required
+                            class="w-full px-4 py-3 rounded-lg border border-[var(--gray-color)] bg-transparent text-[var(--light-color)] focus:outline-none focus:ring-2 focus:ring-[var(--primary-color)] transition-all duration-200">
+                    </div>
+
+                    <!-- Message Textarea -->
+                    <div>
+                        <label for="message" class="block text-[var(--light-color)] font-medium mb-1">Your
+                            Message</label>
+                        <textarea id="message" name="message" rows="5" required
+                            class="w-full px-4 py-3 rounded-lg border border-[var(--gray-color)] bg-transparent text-[var(--light-color)] focus:outline-none focus:ring-2 focus:ring-[var(--primary-color)] transition-all duration-200"></textarea>
+                    </div>
+
+                    <!-- Submit Button -->
+                    <button type="submit"
+                        class="w-full bg-[var(--primary-color)] text-[var(--light-color)] font-bold py-3 px-4 rounded-full hover:bg-[var(--primary-dark)] transition-colors duration-200 shadow-md transform hover:scale-105">
+                        Send Message
+                    </button>
+                </form>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- ================= CONTACT SECTION END ================= -->
+
+
+    <!-- ================= FOOTER start ================= -->
+    <footer class="footer">
+        <div class="footer-content">
+            <!-- Three column grid layout -->
+            <div class="footer-grid">
+
+
+                <!-- Column 1: About/Bio section -->
+                <div class="footer-column">
+                    <!-- Logo -->
+                    <a href="#" class="text-2xl font-bold" style="color: var(--primary-color);">
+                        Pawan<span class="text-white">.Portfolio </span>
+                    </a><br><br>
+                    <p>
+                       Hi, I'm Pawan 👋 — a passionate Web Developer and Software Engineer.
+I specialize in building powerful Web Applications and CRM Software with a focus on clean design, performance, and real-world functionality.
+My projects blend creativity with logic — turning complex ideas into smooth, user-friendly digital experiences.
+I’ve successfully developed and deployed several custom CRM systems and business automation tools for different use cases.
+Always learning, always creating — I’m on a mission to build smarter, scalable web solutions that make an impact. 🚀
+                    </p>
+                    <p>
+                        💬 Let’s Connect and Build Something Amazing Together!
+
+I’m always open to collaborating on exciting projects — whether it’s a web application, a CRM system, or a creative tech idea.
+If you’ve got a vision, let’s bring it to life with clean code, smart design, and powerful functionality.
+👉 Let’s turn ideas into impact!
+                    </p>
+
+                </div>
+
+                <!-- Column 2: Quick navigation links -->
+                <div class="footer-column">
+                    <h3>Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="#home" onclick="smoothScroll('home')">Home</a></li>
+                        <li><a href="#about" onclick="smoothScroll('about')">About</a></li>
+                        <li><a href="#projects" onclick="smoothScroll('portfolio')">Projects</a></li>
+                        <li><a href="#experience" onclick="smoothScroll('services')">Experience</a></li>
+                        <li><a href="#education" onclick="smoothScroll('blog')">Education</a></li>
+                        <li><a href="#contact-form" onclick="smoothScroll('contact')">Contact</a></li>
+                    </ul>
+                </div>
+
+                <!-- Column 3: Contact information and social links -->
+                <div class="footer-column">
+                    <h3>Get In Touch</h3>
+                    <ul class="contact-info">
+                        <li><i class="fa-solid fa-envelope"></i> pawanzilpe1099@gmail.com</li>
+                        <li><i class="fa-solid fa-phone"></i> +91 9503177195</li>
+                        <li><i class="fa-solid fa-location-dot"></i> Wardha, Maharashtra, India</li>
+                    </ul>
+
+                    <!-- Social media icons -->
+                    <div class="social-icons">
+                        <a href="https://in.linkedin.com/in/pawan-zilpe-383582318" class="social-icon" title="LinkedIn"><i
+                                class="fab fa-linkedin-in"></i></a>
+                        <a href="https://github.com/pawanzilpe" class="social-icon" title="GitHub"><i
+                                class="fab fa-github"></i></a>
+                        <a href="https://pawanzilpe.github.io/Portfolio/" class="social-icon" title="Portfolio"><i
+                                class="fab fa-twitter"></i></a>
+                        <a href="https://www.instagram.com/pawan.zilpe_?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" class="social-icon" title="Instagram"><i
+                                class="fab fa-instagram"></i></a>
+                        <a href="mailto:pawanzilpe1099@gmail.com" class="social-icon" title="Email"><i
+                                class="fas fa-envelope"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Footer bottom copyright section -->
+            <div class="footer-bottom">
+                <p>&copy; <span id="current-year"></span> Pawan. All rights reserved. | Designed with ❤️</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ================= FOOTER end ================= -->
+
+    <!-- =============== JS for Mobile Menu start ====================== -->
+    <script>
+        const btn = document.getElementById('menu-btn');
+        const menu = document.getElementById('mobile-menu');
+        btn.addEventListener('click', () => {
+            menu.classList.toggle('hidden');
+        });
+    </script>
+    <!-- =============== JS for Mobile Menu end ====================== -->
+
+    <!-- AOS (Animate on Scroll) Library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script>
+        // Initialize AOS (Animate on Scroll) Library
+        // Used for applying animation effects to elements when they scroll into view.
+        // Applies to multiple sections like About, Skills, Projects for visual enhancement.
+        AOS.init({
+            duration: 800, // Duration of animation in milliseconds
+            easing: 'ease', // Animation easing function
+            once: true, // Animates only once when the element is first scrolled into view
+            offset: 100 // Offset from the original trigger point
+        });
+
+
+
+
+        // ============================== skills section start=================================
+        document.addEventListener('DOMContentLoaded', () => {
+
+            // Initialize AOS (Animate on Scroll) Library
+            // This is used for applying animation effects to elements when they scroll into view.
+            AOS.init({
+                duration: 800,
+                easing: 'ease',
+                once: true,
+                offset: 100
+            });
+
+            // ===== Skills Tab Functionality =====
+            // Handles switching between different skills tabs in the Skills section
+            const tabBtns = document.querySelectorAll('.tab-btn');
+            const tabPanes = document.querySelectorAll('.tab-pane');
+            const skillsSection = document.querySelector('#skills');
+
+            tabBtns.forEach(btn => {
+                btn.addEventListener('click', () => {
+                    // Deactivate all buttons and panes
+                    tabBtns.forEach(b => b.classList.remove('active'));
+                    tabPanes.forEach(p => p.classList.remove('active'));
+
+                    // Activate the clicked button and its corresponding content pane
+                    btn.classList.add('active');
+                    const tabId = btn.getAttribute('data-tab');
+                    document.getElementById(tabId).classList.add('active');
+
+                    // If a new tab is selected, re-animate the skill bars to ensure
+                    // the animation plays even if the section is already in view.
+                    animateSkillBars();
+                });
+            });
+
+            // ===== Animate Skill Bars =====
+            // Visually animates skill progress bars when the skills section comes into view.
+            const animateSkillBars = () => {
+                const skillItems = document.querySelectorAll('.skill-item');
+
+                skillItems.forEach(item => {
+                    const progressBar = item.querySelector('.skill-progress');
+                    const percentage = item.querySelector('.skill-percentage').textContent;
+
+                    // Reset the width to 0 before animating
+                    progressBar.style.width = '0';
+
+                    // Animate the progress bar width after a short delay to create the effect
+                    setTimeout(() => {
+                        progressBar.style.width = percentage;
+                    }, 200);
+                });
+            };
+
+            // Intersection Observer to trigger the animation when the skills section becomes visible
+            if (skillsSection) {
+                const observer = new IntersectionObserver((entries) => {
+                    entries.forEach(entry => {
+                        if (entry.isIntersecting) {
+                            animateSkillBars();
+                            observer.unobserve(entry.target); // Only animate once
+                        }
+                    });
+                }, { threshold: 0.5 }); // Trigger when 50% of the section is visible
+
+                observer.observe(skillsSection);
+            }
+        });
+        // ============================== skills section start=================================
+
+        //=========== Project section start==============
+        // Initialize AOS
+        AOS.init({
+            duration: 800,
+            easing: 'ease-in-out',
+            once: true,
+        });
+
+        // Your existing JS functions
+        function downloadResume() {
+            const link = document.createElement('a');
+            link.href = 'Tejesh-Resume.pdf'; // ✅ Replace with your actual path
+            link.download = 'Tejesh-Resume.pdf';
+            document.body.appendChild(link);
+            link.click();
+            document.body.removeChild(link);
+        }
+        //=========== Project section start==============
+        // ================= RESUME SECTION START ==================
+        AOS.init({
+            offset: 120,
+            duration: 1000,
+            easing: 'ease-in-out-cubic',
+            once: true,
+        });
+        // ================= RESUME SECTION END ==================
+
+
+        //================= CONTACT SECTION START =================
+
+        // Function to handle form submission
+        function handleFormSubmit(event) {
+            // Prevent the default form submission behavior (which would reload the page)
+            event.preventDefault();
+            // In a real-world scenario, you would send the form data to a server here.
+            // For now, we will simply log it to the console.
+            const formData = new FormData(event.target);
+            const data = Object.fromEntries(formData.entries());
+            console.log('Form data:', data);
+
+            // Reset the form after submission
+            event.target.reset();
+        }
+
+        //================= CONTACT SECTION END =================
+
+
+        // ===================== FOOTER SECTION START  ================
+
+        // Function to automatically update copyright year
+        function updateCopyrightYear() {
+            const currentYear = new Date().getFullYear();
+            document.getElementById('current-year').textContent = currentYear;
+        }
+
+        // Function for smooth scrolling to sections (if they exist on the page)
+        function smoothScroll(targetId) {
+            const targetElement = document.getElementById(targetId);
+
+            // Check if the target element exists
+            if (targetElement) {
+                targetElement.scrollIntoView({
+                    behavior: 'smooth',
+                    block: 'start'
+                });
+            } else {
+                // If section doesn't exist, show a message or redirect
+                console.log(`Section "${targetId}" not found on this page`);
+            }
+        }
+
+        // Initialize all footer functionality when page loads
+        document.addEventListener('DOMContentLoaded', function () {
+            updateCopyrightYear();
+
+            console.log('Portfolio footer initialized successfully!');
+        });
+
+        // ===================== FOOTER SECTION END  ================
+    </script>
+</body>
+
+</html>
